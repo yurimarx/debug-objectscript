@@ -19,6 +19,18 @@ ClassMethod AddTestData(amount As %Integer)
     d ..Populate(amount)
 }
 
+ClassMethod SetPersonValues(Name As %String, Title As %String, 
+                            Company As %String, Phone As %String, DOB As %Date) As Sample.Person
+{
+    Set result = ##class(Sample.Person).%New()
+    Set result.Name = Name
+    Set result.Title = Title
+    Set result.Company = Company
+    Set result.Phone = Phone
+    Set result.DOB = DOB
+    Return result
+}
+
 Storage Default
 {
 <Data name="PersonDefaultData">

@@ -30,6 +30,7 @@ XData UrlMap [ XMLNamespace = "http://www.intersystems.com/urlmap" ]
 /// PersonsREST general information
 ClassMethod GetInfo() As %Status
 {
+  HANG 30 //you need give time (30 seconds) to the Developer select the REST process to debug
   SET version = ..#Version
   SET info = {
     "version": (version)

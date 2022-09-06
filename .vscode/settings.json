@@ -5,11 +5,25 @@
       },
     "objectscript.conn" :{
       "ns": "IRISAPP",
-      "active": true,
+      "active": false,
       "docker-compose": {
         "service": "iris",
         "internalPort": 52773
       }
+    },
+    "objectscript.export": {
+      "folder": "src",
+      "addCategory": false,
+      "map": {},
+      "atelier": true,
+      "generated": false,
+      "filter": "",
+      "exactFilter": "",
+      "category": "*",
+      "noStorage": false,
+      "dontExportIfNoChanges": false,
+      "maxConcurrentConnections": 0,
+      "mapped": true
     },
     "objectscript.conn.active": true,
     
